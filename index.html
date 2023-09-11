@@ -20,12 +20,16 @@
     <main class="max-w-6xl mx-auto">
       <!-- search -->
       <section class="bg-gray-400 p-3 rounded-md">
-        <input type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
-        <button class="btn">Search</button>
+        <input id="searchInput" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
+        <button onclick="handlerSearch()" class="btn">Search</button>
       </section>
       <!-- card -->
       <section class="mt-4">
         <div id="phone-container" class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 ">
+        </div>
+        <!-- show all button -->
+        <div class="hidden text-center mt-9 mb-9 " id="showAllButton">
+          <button onclick="handleShowAl()" class="btn btn-active btn-primary">Show all</button>
         </div>
       </section>
     </main>
